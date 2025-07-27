@@ -12,6 +12,7 @@ export function isPrime(num) {
 
 //Function to find the nth prime number
 export function findNthPrime(n) {
+  console.log(`Finding ${n}th prime Number`)
   let count = 0;
   let num = 2;
   while (count < n) {
