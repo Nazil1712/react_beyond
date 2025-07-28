@@ -5,6 +5,7 @@ import App from "./App";
 import './output.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HeavyOperations from "./advanceHooks/useMemo/HeavyOperations";
+import Referencing from "./advanceHooks/useRef/Referencing";
 
 const appRouter = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const appRouter = createBrowserRouter([
     {
         path: '/useMemo',
         element: <HeavyOperations/>
+    },
+    {
+      path: '/useRef',
+      element: <Referencing/>
     }
 ])
 
